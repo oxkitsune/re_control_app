@@ -1,0 +1,39 @@
+[workspace]
+members = ["example_app", "re_control_panel"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Gijs de Jong"]
+
+[workspace.dependencies]
+re_control_panel = { path = "re_control_panel" }
+
+rerun = { version = "0.19.1", features = ["ecolor", "clap"] }
+bincode = { version = "1.3.3" }
+clap = { version = "4.5.20", features = ["derive"] }
+miette = { version = "5.10.0" }
+mimalloc = { version = "0.1.39" }
+re_crash_handler = { version = "0.19.1" }
+re_sdk_comms = { version = "0.19.1", features = ["server"] }
+re_smart_channel = { version = "0.19.1" }
+re_viewer = { version = "0.19.1" }
+re_log_types = { version = "0.19.1" }
+re_log = { version = "0.19.1" }
+serde = { version = "1.0.213", features = ["derive"] }
+serde_json = { version = "1.0.132" }
+rand = { version = "0.8.5" }
+tokio = { version = "1.14.0", features = [
+  "macros",
+  "rt-multi-thread",
+  "time",
+  "net",
+  "io-util",
+  "sync",
+  "signal",
+] }
+tracing = { version = "0.1.40" }
+tracing-log = { version = "0.2.0" }
+tracing-subscriber = { version = "0.3.18" }
+itertools = { version = "0.13.0" }
