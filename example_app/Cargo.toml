@@ -8,6 +8,4 @@ edition.workspace = true
 [dependencies]
 rerun = { workspace = true }
 re_control_panel = { workspace = true }
-itertools = { workspace = true }
-rand = { workspace = true }
 tokio = { workspace = true }

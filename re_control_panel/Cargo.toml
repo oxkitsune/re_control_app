@@ -7,22 +7,11 @@ edition.workspace = true
 
 
 [dependencies]
-
 bincode = { workspace = true }
-clap = { workspace = true }
-miette = { workspace = true }
 mimalloc = { workspace = true }
 re_crash_handler = { workspace = true }
 re_sdk_comms = { workspace = true }
-re_smart_channel = { workspace = true }
-re_log_types = { workspace = true }
 re_log = { workspace = true }
 re_viewer = { workspace = true }
-rerun = { workspace = true }
 serde = { workspace = true }
-serde_json = { workspace = true }
 tokio = { workspace = true }
-tracing = { workspace = true }
-tracing-log = { workspace = true }
-tracing-subscriber = { workspace = true }
-rand = { workspace = true }
